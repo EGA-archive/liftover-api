@@ -1,0 +1,1 @@
+Insert your VCF, fasta and chains here.

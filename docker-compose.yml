@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  bio-api:
+    build: .
+    container_name: liftover-api
+
+    ports:
+      - "7000:7000"
+
+    environment:
+      BCFTOOLS_PLUGINS: /opt/bcftools/plugins
+      PYTHONUNBUFFERED: "1"
+      LD_LIBRARY_PATH: /usr/lib/x86_64-linux-gnu:/opt/gatk/lib
+
+    restart: unless-stopped
+
+    volumes:
+      - ./data:/data
+
+    tty: true
