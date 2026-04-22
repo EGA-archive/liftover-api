@@ -3,3 +3,4 @@
 *.fa
 *.fa.fai
 *.chain.gz
+/data/*.txt
