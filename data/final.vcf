@@ -1,0 +1,79 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##contig=<ID=1,length=248956422,assembly=hg38>
+##contig=<ID=2,length=242193529,assembly=hg38>
+##contig=<ID=3,length=198295559,assembly=hg38>
+##contig=<ID=4,length=190214555,assembly=hg38>
+##contig=<ID=5,length=181538259,assembly=hg38>
+##contig=<ID=6,length=170805979,assembly=hg38>
+##contig=<ID=7,length=159345973,assembly=hg38>
+##contig=<ID=8,length=145138636,assembly=hg38>
+##contig=<ID=9,length=138394717,assembly=hg38>
+##contig=<ID=10,length=133797422,assembly=hg38>
+##contig=<ID=11,length=135086622,assembly=hg38>
+##contig=<ID=12,length=133275309,assembly=hg38>
+##contig=<ID=13,length=114364328,assembly=hg38>
+##contig=<ID=14,length=107043718,assembly=hg38>
+##contig=<ID=15,length=101991189,assembly=hg38>
+##contig=<ID=16,length=90338345,assembly=hg38>
+##contig=<ID=17,length=83257441,assembly=hg38>
+##contig=<ID=18,length=80373285,assembly=hg38>
+##contig=<ID=19,length=58617616,assembly=hg38>
+##contig=<ID=20,length=64444167,assembly=hg38>
+##contig=<ID=21,length=46709983,assembly=hg38>
+##contig=<ID=22,length=50818468,assembly=hg38>
+##contig=<ID=X,length=156040895,assembly=hg38>
+##contig=<ID=Y,length=57227415,assembly=hg38>
+##ALT=<ID=DEL,Description="Deletion">
+##ALT=<ID=DUP,Description="Duplication">
+##FILTER=<ID=HIGH_NCR,Description="Unacceptably high rate of no-call GTs">
+##FILTER=<ID=UNRESOLVED,Description="Variant is unresolved">
+##INFO=<ID=END,Number=1,Type=Integer,Description="End of CNV">
+##INFO=<ID=SVLEN,Number=1,Type=Integer,Description="Length of CNV">
+##INFO=<ID=ALGORITHMS,Number=.,Type=String,Description="Source algorithms">
+##INFO=<ID=BOTHSIDES_SUPPORT,Number=0,Type=Flag,Description="Variant has read-level support for both sides of breakpoint.Indicates higher-confidence variants.">
+##INFO=<ID=CHR2,Number=1,Type=String,Description="Chromosome for END coordinate">
+##INFO=<ID=EVIDENCE,Number=.,Type=String,Description="Classes of random forest support.">
+##INFO=<ID=NCR,Number=1,Type=Float,Description="Proportion of no-call GTs">
+##INFO=<ID=PCRMINUS_NCR,Number=1,Type=Float,Description="Proportion of no-call GTs in PCRMINUS samples">
+##INFO=<ID=PCRPLUS_NCR,Number=1,Type=Float,Description="Fraction of PCRPLUS sample GTs that are no-calls.">
+##INFO=<ID=POS2,Number=1,Type=Integer,Description="Start position of the structural variant on CHR2">
+##INFO=<ID=PREDICTED_INTERGENIC,Number=0,Type=Flag,Description="SV does not overlap any protein-coding genes.">
+##INFO=<ID=PREDICTED_NEAREST_TSS,Number=.,Type=String,Description="Nearest transcription start site to an intergenic variant.">
+##INFO=<ID=AN,Number=1,Type=Integer,Description="Total number of alleles genotyped (biallelic sites only).">
+##INFO=<ID=AC,Number=A,Type=Integer,Description="Number of non-reference alleles observed (biallelic sites only).">
+##INFO=<ID=AF,Number=A,Type=Float,Description="Allele frequency (biallelic sites only).">
+##INFO=<ID=N_BI_GENOS,Number=1,Type=Integer,Description="Total number of samples with complete genotypes (biallelic sites only).">
+##INFO=<ID=N_HOMREF,Number=1,Type=Integer,Description="Number of samples with homozygous reference genotypes (biallelic sites only).">
+##INFO=<ID=N_HET,Number=1,Type=Integer,Description="Number of samples with heterozygous genotypes (biallelic sites only).">
+##INFO=<ID=N_HOMALT,Number=1,Type=Integer,Description="Number of samples with homozygous alternate genotypes (biallelic sites only).">
+##INFO=<ID=FREQ_HOMREF,Number=1,Type=Float,Description="Homozygous reference genotype frequency (biallelic sites only).">
+##INFO=<ID=FREQ_HET,Number=1,Type=Float,Description="Heterozygous genotype frequency (biallelic sites only).">
+##INFO=<ID=FREQ_HOMALT,Number=1,Type=Float,Description="Homozygous alternate genotype frequency (biallelic sites only).">
+##INFO=<ID=CN_NUMBER,Number=1,Type=Integer,Description="Total number of samples with estimated copy numbers (multiallelic CNVs only).">
+##INFO=<ID=CN_COUNT,Number=.,Type=Integer,Description="Number of samples observed at each copy state, starting from CN=0 (multiallelic CNVs only).">
+##INFO=<ID=CN_STATUS,Number=.,Type=Integer,Description="Differnt copy states observed, starting from CN=0 (multiallelic CNVs only).">
+##INFO=<ID=CN_FREQ,Number=.,Type=Float,Description="Frequency of samples observed at each copy state, starting from CN=0 (multiallelic CNVs only).">
+##INFO=<ID=CN_NONREF_COUNT,Number=1,Type=Integer,Description="Number of samples with non-reference copy states (multiallelic CNVs only).">
+##INFO=<ID=CN_NONREF_FREQ,Number=1,Type=Float,Description="Frequency of samples with non-reference copy states (multiallelic CNVs only).">
+##INFO=<ID=MULTIALLELIC,Number=0,Type=Flag,Description="Multiallelic site">
+##INFO=<ID=aminoacidChanges,Number=1,Type=String,Description="Amino acid change caused by the variant">
+##INFO=<ID=HGVSg,Number=1,Type=String,Description="HGVSg genomic or transcript-level annotation for the variant">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##INFO=<ID=AC_hom,Number=A,Type=Integer,Description="Allele counts in homozygous genotypes">
+##INFO=<ID=AC_het,Number=A,Type=Integer,Description="Allele counts in heterozygous genotypes">
+##INFO=<ID=NS,Number=1,Type=Integer,Description="Number of samples with data">
+##INFO=<ID=AC_Hom,Number=A,Type=Integer,Description="Allele counts in homozygous genotypes">
+##INFO=<ID=AC_Het,Number=A,Type=Integer,Description="Allele counts in heterozygous genotypes">
+##INFO=<ID=AC_Hemi,Number=A,Type=Integer,Description="Allele counts in hemizygous genotypes">
+##INFO=<ID=MAF,Number=1,Type=Float,Description="Frequency of the second most common allele">
+##INFO=<ID=HWE,Number=A,Type=Float,Description="HWE test (PMID:15789306); 1=good, 0=bad">
+##INFO=<ID=ExcHet,Number=A,Type=Float,Description="Test excess heterozygosity; 1=good, 0=bad">
+##bcftools_pluginVersion=1.13+htslib-1.13+ds
+##bcftools_pluginCommand=plugin fill-tags /home/mireia/Bioinfo/Beacon/Create_test_vcf/synthetic_usecases_4beacon_testingV2REFORMATTED.vcf; Date=Thu Dec 12 18:40:03 2024
+##bcftools_pluginCommand=plugin fill-tags /home/mireia/Bioinfo/Beacon/Create_test_vcf/synthetic_usecases_4beacon_testingV4REFORMATTED.vcf; Date=Fri May 16 13:38:11 2025
+##VEP="v114.0" API="v114" time="2025-05-16 11:47:03" cache="/nfs/public/ro/ensweb-data/latest/tools/www/e114/vep/cache/homo_sapiens/114_GRCh38" db="homo_sapiens_core_114_38@hh-mysql-ens-species-web-1" 1000genomes="phase3" COSMIC="100" ClinVar="202409" HGMD-PUBLIC="20204" assembly="GRCh38.p14" dbSNP="156" gencode="GENCODE 48" genebuild="GENCODE48" gnomADe="v4.1" gnomADg="v4.1" polyphen="2.2.3" regbuild="1.0" sift="6.2.1"
+##INFO=<ID=CSQ,Number=.,Type=String,Description="Consequence annotations from Ensembl VEP. Format: Allele|Consequence|IMPACT|SYMBOL|Gene|Feature_type|Feature|BIOTYPE|EXON|INTRON|HGVSc|HGVSp|cDNA_position|CDS_position|Protein_position|Amino_acids|Codons|Existing_variation|REF_ALLELE|UPLOADED_ALLELE|DISTANCE|STRAND|FLAGS|SYMBOL_SOURCE|HGNC_ID|CANONICAL|ENSP|HGVS_OFFSET">
+##VEP-command-line='vep --cache --canonical --database 0 --dir [PATH]/cache --dir_plugins [PATH]/VEP_plugins --distance 5000 --fasta_dir [PATH]/fasta --force --fork 4 --gencode_primary --hgvs --input_file [PATH]/synthetic_usecases_4beacon_testingV4.vcf --output_file [PATH]/output.vcf --protein --quiet --safe --show_ref_allele --stats_text --symbol --uploaded_allele --vcf'
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	SAMPLE1	SAMPLE2	SAMPLE3	SAMPLE4	SAMPLE5	SAMPLE6	SAMPLE7	SAMPLE8	SAMPLE9	SAMPLE10	SAMPLE11	SAMPLE12	SAMPLE13	SAMPLE14	SAMPLE15	SAMPLE16	SAMPLE17	SAMPLE18	SAMPLE19	SAMPLE20
+21	19653341	.	AT	A	.	PASS	AF=0.05;AC=2;AN=40;AC_hom=0;AC_het=2;NS=20;MAF=0.05;AC_Het=2;AC_Hom=0;AC_Hemi=0;HWE=1;ExcHet=0.974359;CSQ=T|missense_variant|MODERATE|F5|ENSG00000198734|Transcript|ENST00000367796|protein_coding|10/25||ENST00000367796.3:c.1601G>A|ENSP00000356770.3:p.Arg534Gln|1803|1601|534|R/Q|cGa/cAa||C|C/T||-1||HGNC|HGNC:3542||ENSP00000356770|,T|missense_variant|MODERATE|F5|ENSG00000198734|Transcript|ENST00000367797|protein_coding|10/25||ENST00000367797.9:c.1601G>A|ENSP00000356771.3:p.Arg534Gln|1696|1601|534|R/Q|cGa/cAa||C|C/T||-1||HGNC|HGNC:3542|YES|ENSP00000356771|	GT	0|0	0|0	0|0	0|0	0|0	0|0	0|0	0|0	0|1	0|0	0|0	0|0	0|0	0|0	0|0	0|0	0|1	0|0	0|0	0|0

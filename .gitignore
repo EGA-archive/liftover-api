@@ -1,6 +1,4 @@
-*.vcf
 *.vcf.gz
 *.fa
 *.fa.fai
 *.chain.gz
-/data/*.txt
