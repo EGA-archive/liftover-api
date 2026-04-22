@@ -49,6 +49,15 @@ async def liftover(pos: int, refBases: str, altBases: str, chr: str, finalAssemb
             stdout=f,
             stderr=g
         )
+    with open('/data/logs.txt', 'r') as g:
+        liftover = g.readlines()[-1]
+        if 'Error' in liftover:
+            return {"error": liftover}
+        split_by_slash=liftover.split('/')
+        rejected=int(split_by_slash[-1])
+        reference_added=int(split_by_slash[-2])
+        swapped=int(split_by_slash[-3])
+        total=int(split_by_slash[-4].split(':')[-1])
     with open('/data/result.txt', 'r') as f:
         liftover = f.readlines()[-1]
         split_by_tab=liftover.split('\t')
@@ -56,12 +65,4 @@ async def liftover(pos: int, refBases: str, altBases: str, chr: str, finalAssemb
         pos=split_by_tab[1]
         ref=split_by_tab[3]
         alt=split_by_tab[4]
-    with open('/data/logs.txt', 'r') as g:
-        liftover = g.readlines()[-1]
-        split_by_slash=liftover.split('/')
-        rejected=int(split_by_slash[-1])
-        reference_added=int(split_by_slash[-2])
-        swapped=int(split_by_slash[-3])
-        total=int(split_by_slash[-4].split(':')[-1])
-
     return {"chr": chr, "pos": pos, "ref": ref, "alt": alt, "total": total, "swapped":swapped,"reference added": reference_added, "rejected": rejected }
