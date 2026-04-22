@@ -1,6 +1,11 @@
 from fastapi import FastAPI
 import subprocess
 import pysam
+from fastapi.middleware.cors import CORSMiddleware
+
+origins = [
+    "http://localhost:3000"
+]
 
 def edit_vcf(new_chrom, new_pos, new_ref, new_alt):
     vcf_in = pysam.VariantFile("/data/synthetic_usecases_4beacon_testingV4.vcf")
@@ -18,6 +23,14 @@ def edit_vcf(new_chrom, new_pos, new_ref, new_alt):
     vcf_out.close()
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get("/liftover")
 async def liftover(pos: int, refBases: str, altBases: str, chr: str, finalAssembly: str):
